@@ -1,14 +1,11 @@
 text = 'Lines of Test\nLines of Code'
 
-#split the text at every \n and then store in lines as a list
-lines = text.split('\n')
 
-#loop through items in lines and add a * for each new line
-for i in range(len(lines)):
-    lines[i] = '*' + lines[i]
+new_text = text.split('\n')
 
-text = '\n'.join(lines)
+for x in new_text:
+    print('*' + x)
 
-print(lines)
-print(text)
+print(new_text)
+
 
